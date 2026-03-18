@@ -1,15 +1,15 @@
 class Brewcli < Formula
   desc "Interactive Homebrew TUI built with Bun, TypeScript, and Ink"
   homepage "https://github.com/kassol/brewcli"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   if Hardware::CPU.arm?
-    url "https://github.com/kassol/brewcli/releases/download/v0.1.4/brewcli-v0.1.4-macos-arm64.tar.gz"
-    sha256 "959a6b16e2d16db07400634f0d156539459e8ee8d16cef5472b296899fe9e94f"
+    url "https://github.com/kassol/brewcli/releases/download/v0.1.5/brewcli-v0.1.5-macos-arm64.tar.gz"
+    sha256 "2492f877ccd53f3c113746b4c465e37715f847a922ce33d9e4cfb9f11e0d08af"
   else
-    url "https://github.com/kassol/brewcli/releases/download/v0.1.4/brewcli-v0.1.4-macos-x64.tar.gz"
-    sha256 "30cf9016777eb0f7a2da0478e848f2541b9ce2a169c8c53348bee268856f92e0"
+    url "https://github.com/kassol/brewcli/releases/download/v0.1.5/brewcli-v0.1.5-macos-x64.tar.gz"
+    sha256 "14ccafff78d7e741a834d911a01285b09689a0d180cc230cb3a02364073c915b"
   end
 
   def install
@@ -18,6 +18,6 @@ class Brewcli < Formula
 
   test do
     output = shell_output("#{bin}/brewcli --version")
-    assert_match "brewcli 0.1.4", output
+    assert_match "brewcli 0.1.5", output
   end
 end
