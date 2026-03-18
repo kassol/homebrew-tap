@@ -6,10 +6,10 @@ class Brewcli < Formula
 
   if Hardware::CPU.arm?
     url "https://github.com/kassol/brewcli/releases/download/v0.1.4/brewcli-v0.1.4-macos-arm64.tar.gz"
-    sha256 "46c9cf474f9fc22cc9df4cca634fa5accf1bb46db25c2e4a62550597e6b9b751"
+    sha256 "959a6b16e2d16db07400634f0d156539459e8ee8d16cef5472b296899fe9e94f"
   else
     url "https://github.com/kassol/brewcli/releases/download/v0.1.4/brewcli-v0.1.4-macos-x64.tar.gz"
-    sha256 "6ee905d639f5606c1f9dc372f27e5db1159a6851a7d4330c838f61696ae0961d"
+    sha256 "30cf9016777eb0f7a2da0478e848f2541b9ce2a169c8c53348bee268856f92e0"
   end
 
   def install
