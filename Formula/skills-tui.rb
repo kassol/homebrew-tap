@@ -1,16 +1,16 @@
 class SkillsTui < Formula
   desc "TUI for managing global AI agent skills"
   homepage "https://github.com/kassol/skills-tui"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
   depends_on "node"
 
   if Hardware::CPU.arm?
-    url "https://github.com/kassol/skills-tui/releases/download/v0.1.1/skills-tui-v0.1.1-macos-arm64.tar.gz"
-    sha256 "e3dbd69d1aa72252ce1b5a87c197ab549131f3dae90f6a02ccb59660e33ab3dd"
+    url "https://github.com/kassol/skills-tui/releases/download/v0.1.2/skills-tui-v0.1.2-macos-arm64.tar.gz"
+    sha256 "f3ffa8c6f6e7bf3c70e42597d30ffb4f89320e776cf7dfd4021117f2d848670f"
   else
-    url "https://github.com/kassol/skills-tui/releases/download/v0.1.1/skills-tui-v0.1.1-macos-x64.tar.gz"
-    sha256 "c67e0c32271b6afe1f797d26ebd10edd76fd4f405c49d06b8c3b02117cc635de"
+    url "https://github.com/kassol/skills-tui/releases/download/v0.1.2/skills-tui-v0.1.2-macos-x64.tar.gz"
+    sha256 "242d12e4d3aa868f457c708e65a6f0359ef5f9b385c52c897429991d76298b42"
   end
 
   def install
