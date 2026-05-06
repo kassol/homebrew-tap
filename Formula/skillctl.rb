@@ -1,16 +1,16 @@
 class Skillctl < Formula
   desc "Control plane for user-level global AI agent skills"
   homepage "https://github.com/kassol/skillctl"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
   depends_on "node"
 
   if Hardware::CPU.arm?
-    url "https://github.com/kassol/skillctl/releases/download/v0.2.1/skillctl-v0.2.1-macos-arm64.tar.gz"
-    sha256 "4628064695088555f346d81074dfde64de3c81db88556c7bddf927d00420a71e"
+    url "https://github.com/kassol/skillctl/releases/download/v0.2.2/skillctl-v0.2.2-macos-arm64.tar.gz"
+    sha256 "6329c27bc54561b06dd91dd9684e08b66d78b78b2be2a6379a14be6c6c3bdbb9"
   else
-    url "https://github.com/kassol/skillctl/releases/download/v0.2.1/skillctl-v0.2.1-macos-x64.tar.gz"
-    sha256 "37edde34c893149da9e599f60bfd1f4f0ad149a33129dd12dbb516021721adb2"
+    url "https://github.com/kassol/skillctl/releases/download/v0.2.2/skillctl-v0.2.2-macos-x64.tar.gz"
+    sha256 "874cda2b7d67a9957cd497f6aa505023bf2a3c0584c609c415299c63a9c14770"
   end
 
   def install
